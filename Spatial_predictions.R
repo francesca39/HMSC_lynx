@@ -9,7 +9,7 @@
 # ========================
 
 
-library(Hmsc)# Hmsc is the core package used for Hierarchical Modelling of Species Communities
+library(Hmsc)
 library(raster)# Used for handling and manipulating spatial raster data
 library(ggplot2)# ggplot2 is a popular library for making plots and maps
 library(dplyr)# dplyr is used for data wrangling and transformation
@@ -21,7 +21,7 @@ library(readxl)# readxl is used to import Excel files (.xlsx)
 # 2. LOAD MODEL AND  DATA
 # ========================
 # Load the dataset  used to fit the model
-setwd("D:/Datasets and code/datasets/Datasets_fullmodel")
+setwd("D:/fullmodel")
 XData<- readRDS("XData.R")
 
 # Load a pre-trained Hmsc model from file
@@ -38,7 +38,7 @@ m <- (fullmodel)
 # ========================
 
 # Load focal raster data for which we want to make prediction map for example  "dead wood index" 
-setwd("D:/Datasets and code/datasets/rasters for prediction maps_2km resolution")
+setwd("D:/rasters for prediction maps_2km resolution")
 
 dead_wood_index_raster <- raster("dead_wood_index_raster.tif")
 
@@ -327,3 +327,4 @@ writeRaster(bivariate_raster,
 
 
 ####################END OF THE CODE################################################
+
