@@ -1,15 +1,4 @@
-## ------------------------------------------------------------------------
-## 'Habitat complexity and prey composition shape an apex predator’s habitat use across contrasting landscapes'
-## ------------------------------------------------------------------------
 
-
-
-## ------------------------------------------------------------------------
-## R script to reproduce HMSC analyses.
-## This code closely follows the protocol from the HMSC book:
-## Ovaskainen, Otso, and Nerea Abrego. Joint species distribution modelling: 
-## with applications in R. Cambridge University Press, 2020.
-## ------------------------------------------------------------------------
 
 ## ------------------------------------------------------------------------
 ## HMSC script for Centre region
@@ -80,3 +69,4 @@ save(centre_model, file = paste0("centre_model", thinning, ".RData")) # running 
 ## ------------------------------------------------------------------------
 ## End of Centre region script
 ## ------------------------------------------------------------------------
+
